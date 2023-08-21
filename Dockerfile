@@ -10,6 +10,7 @@ COPY ParallelProgrammingJava.ipynb /etc/skel/
 COPY ParallelProgrammingC.ipynb /etc/skel/
 COPY ParallelProgrammingCC.ipynb /etc/skel/
 COPY ParallelProgrammingFlour.ipynb /etc/skel/
+COPY FlourWalkthrough.ipynb /etc/skel/
 COPY hello.ipynb /etc/skel/
 COPY Lecture1.ipynb /etc/skel/
 COPY startup.sh /startup.sh
