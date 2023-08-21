@@ -1,0 +1,22 @@
+version: '3'
+
+volumes:
+    home_fs:
+
+services:
+
+  java:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    image: stevenrbrandt/java
+    container_name: java
+    hostname: javahost
+    #entrypoint: sleep infinity
+    ports:
+      - 443:443
+      - 80:80
+    volumes:
+      - home_fs:/home
+      - ./etc/pki:/etc/pki:Z
+    entrypoint: bash /startup.sh
